@@ -20,8 +20,8 @@ enum FeedbackColor: String {
 
 // MARK: - Enum for Theme Colors
 enum ThemeColor: String {
-    case primary = "primary"
-    case secondary = "secondary"
+    case primary
+    case secondary
     
     var color: Color {
         return Color(self.rawValue)
@@ -30,8 +30,8 @@ enum ThemeColor: String {
 
 // MARK: - Enum for Basic Colors
 enum BasicColor: String {
-    case black = "black"
-    case white = "white"
+    case black
+    case white
     
     var color: Color {
         return Color(self.rawValue)
@@ -40,8 +40,8 @@ enum BasicColor: String {
 
 // MARK: - Enum for Background Colors
 enum BackgroundColor: String {
-    case disabledBackground = "disabledBackground"
-    case skeletonBackground = "skeletonBackground"
+    case disabledBackground
+    case skeletonBackground
     
     var color: Color {
         return Color(self.rawValue)
