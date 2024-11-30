@@ -94,3 +94,48 @@ struct UIButton: View {
         }
     }
 }
+
+#Preview {
+    VStack(spacing: 20) {
+        UIButton(
+            title: "Quero essa carona!",
+            style: .normal,
+            state: .normal
+        ) {
+            // Nenhuma ação
+        }
+        
+        UIButton(
+            title: "",
+            style: .custom(foregroundColor: .white, backgroundColor: .theme(.primary)),
+            state: .loading
+        ) {
+            // Nenhuma ação
+        }
+        
+        UIButton(
+            title: "Quero essa carona",
+            style: .disabled,
+            state: .disabled
+        ) {
+            // Nenhuma ação
+        }
+        
+        UIButton(
+            title: "Quero essa carona",
+            style: .normal,
+            state: .success
+        ) {
+            // Nenhuma ação
+        }
+        
+        UIButton(
+            title: "Cancelar carona",
+            style: .custom(foregroundColor: .feedback(.error), backgroundColor: .basic(.white)),
+            state: .normal
+        ) {
+            // Nenhuma ação
+        }
+    }
+    .padding()
+}
