@@ -22,15 +22,16 @@ struct ScreenSucess: View {
                 .padding(35)
             
             Text(title)
-                .font(.headline)
-                .foregroundColor(.basic(.black))
+                .font(.system(size: 28, weight: .bold))
+                .foregroundColor(.text(.title))
+                .padding(.bottom, 8)
             
             Text(description)
-                .font(.headline)
-                .foregroundColor(.basic(.black))
+                .font(.system(size: 16))
+                .foregroundColor(.text(.description))
                 .multilineTextAlignment(.center)
-                .padding(.horizontal, 40)
-                .padding(8)
+                .padding(.horizontal, 48)
+                .padding(.bottom, 16)
             
             UIButton(
                 title: textButton,

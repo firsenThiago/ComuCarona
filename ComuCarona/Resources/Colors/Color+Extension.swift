@@ -25,4 +25,8 @@ extension Color {
     static func feedback(_ feedbackColor: FeedbackColor) -> Color {
         return feedbackColor.color
     }
+    
+    static func text(_ textColor: TextColor) -> Color {
+        return textColor.color
+    }
 }

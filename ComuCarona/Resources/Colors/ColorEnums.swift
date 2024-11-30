@@ -47,3 +47,14 @@ enum BackgroundColor: String {
         return Color(self.rawValue)
     }
 }
+
+// MARK: - Enum for Text Colors
+
+enum TextColor: String {
+    case title
+    case description
+    
+    var color: Color {
+        return Color(self.rawValue)
+    }
+}
