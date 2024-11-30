@@ -31,6 +31,7 @@ struct UITab<ContentLeft: View, ContentCenter: View, ContentRigth: View>: View {
                     Text("Perfil")
                 }
         }
+        .accentColor(.theme(.primary))
     }
 }
 
