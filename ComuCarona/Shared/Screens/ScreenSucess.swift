@@ -15,7 +15,7 @@ struct ScreenSucess: View {
     
     var body: some View {
         VStack() {
-            Image(systemName: "checkmark.seal.fill")
+            Image(systemName: .check)
                 .font(.system(size: 100))
                 .symbolRenderingMode(.monochrome)
                 .foregroundColor(.feedback(.success))

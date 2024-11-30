@@ -18,7 +18,7 @@ struct UIToast: View {
     
     var body: some View {
         HStack(alignment: .center, spacing: 8) {
-            Image(systemName: "exclamationmark.circle")
+            Image(systemName: .info)
                 .foregroundColor(.basic(.white))
             Text(title)
                 .font(.headline)

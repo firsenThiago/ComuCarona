@@ -82,7 +82,7 @@ struct UIButton: View {
                 .progressViewStyle(CircularProgressViewStyle())
                 .tint(currentForegroundColor)
         } else if state == .success {
-            Image(systemName: "checkmark.circle")
+            Image(systemName: .checkCircle)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 24, height: 24)
