@@ -1,5 +1,5 @@
 //
-//  ScreenSucess.swift
+//  SucessScreen.swift
 //  ComuCarona
 //
 //  Created by Thiago Firsen on 29/11/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ScreenSucess: View {
+struct SucessScreen: View {
     var title: String
     var description: String
     var textButton: String
@@ -44,7 +44,7 @@ struct ScreenSucess: View {
 }
 
 #Preview {
-    ScreenSucess(
+    SucessScreen(
         title: "Sua carona foi cancelada!",
         description: "Que pena que você cancelou a carona, mas sempre que precisar, volte! 😁🚗",
         textButton: "Ir para a home"

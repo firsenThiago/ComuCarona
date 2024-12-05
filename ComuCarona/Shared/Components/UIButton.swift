@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Enum - Button States
-enum ButtonState {
+public enum ButtonState {
     case normal
     case success
     case disabled
@@ -16,10 +16,20 @@ enum ButtonState {
 }
 
 /// Enum - Button Styles
-enum ButtonStyleType {
+public enum ButtonStyleType {
     case normal
     case disabled
     case custom(foregroundColor: Color, backgroundColor: Color)
+}
+
+struct CustomButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding()
+            .foregroundColor(.white)
+            .cornerRadius(8)
+            .animation(nil, value: configuration.isPressed) 
+    }
 }
 
 struct UIButton: View {
@@ -43,6 +53,7 @@ struct UIButton: View {
             }
         }
         .disabled(state == .disabled || state == .loading || state == .success)
+        .buttonStyle(CustomButtonStyle())
     }
     
     /// Text Color
