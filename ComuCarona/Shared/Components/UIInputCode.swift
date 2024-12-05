@@ -13,7 +13,7 @@ struct UIInputCode: View {
     @FocusState private var focusedField: Int?
     
     var body: some View {
-        HStack(spacing: 10) {
+        HStack(spacing: 15) {
             ForEach(0..<5, id: \.self) { index in
                 TextField("", text: $code[index])
                     .keyboardType(.numberPad)
@@ -40,7 +40,6 @@ struct UIInputCode: View {
         .onAppear {
             focusedField = 0
         }
-        .padding()
     }
 }
 

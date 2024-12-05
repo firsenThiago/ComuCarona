@@ -25,7 +25,6 @@ public enum ButtonStyleType {
 struct CustomButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .padding()
             .foregroundColor(.white)
             .cornerRadius(8)
             .animation(nil, value: configuration.isPressed) 
